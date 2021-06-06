@@ -26,3 +26,17 @@ if (randomNumber1 > randomNumber2) {
 function refreshPage() {
   window.location.reload();
 }
+
+function countScoreForPlayer1() {
+  let score = 0;
+  if (randomNumber1 > randomNumber2) {
+    score += 1;
+  }
+}
+
+function countScoreForPlayer2() {
+  let score = 0;
+  if (randomNumber2 > randomNumber1) {
+    score += 1;
+  }
+}
