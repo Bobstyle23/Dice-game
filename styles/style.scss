@@ -11,6 +11,22 @@ $font-family: "Indie Flower", cursive;
   display: inline-block;
 }
 
+.refresh {
+  padding: 15px;
+  margin-top: 10px;
+  font-family: $font-family;
+  font-style: bold;
+  font-size: 20px;
+  background-color: #cf0000;
+  color: white;
+  border-radius: 30px;
+  border: none;
+
+  &:hover {
+    background-color: #f54748;
+  }
+}
+
 body {
   background-color: #393e46;
 }
