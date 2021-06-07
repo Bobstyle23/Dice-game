@@ -4,6 +4,11 @@ let randomNumber1 = Math.floor(Math.random() * 6) + 1;
 let randomDiceImage = "dice" + randomNumber1 + ".png";
 let randomImageSource = "images/" + randomDiceImage;
 
+// need to modify this
+let scores = [0, 0];
+let roundScore = 0;
+let active = 0;
+
 let image1 = document.querySelectorAll("img")[0];
 image1.setAttribute("src", randomImageSource);
 
@@ -27,16 +32,17 @@ function refreshPage() {
   window.location.reload();
 }
 
+// need to modify this
 function countScoreForPlayer1() {
   let score = 0;
-  if (randomNumber1 > randomNumber2) {
-    score += 1;
+  if (document.getElementById("title") === " 🚩Player 1  Wins!") {
+    document.getElementById("playerOne") += 1;
   }
 }
 
 function countScoreForPlayer2() {
   let score = 0;
   if (randomNumber2 > randomNumber1) {
-    score += 1;
+    rscore += 1;
   }
 }
